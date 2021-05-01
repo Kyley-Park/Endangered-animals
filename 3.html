@@ -1,19 +1,53 @@
 <!doctype html>
 <html>
+
 <head>
   <title>WEB1-Endangered animals</title>
   <meta charset="utf-8">
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
+
 <body>
   <h1><a href="index.html">Endangered Animals</a></h1>
+
+  <input type="button" value="night" onclick="
+  nightDayHandler(this);
+  ">
+
   <ol>
     <li><a href="1.html">Polar bears</a></li>
     <li><a href="2.html">Whales</a></li>
     <li><a href="3.html">Rhinos</a></li>
   </ol>
-  <h1>Rhino</h1>
-  <img src="rhino.jpg" width="700">
-  <p>Rhinos once roamed many places throughout Europe, Asia, and Africa and were known to early Europeans who depicted them in cave paintings. At the beginning of the 20th century, 500,000 rhinos roamed Africa and Asia. By 1970, rhino numbers dropped to 70,000, and today, around 27,000 rhinos remain in the wild. Very few rhinos survive outside national parks and reserves due to persistent poaching and habitat loss over many decades. Three species of rhino—black, Javan, and Sumatran—are critically endangered. Today, a small population of Javan rhinos is found in only one national park on the northern tip of the Indonesian island of Java. A mainland subspecies of the Javan rhino was declared extinct in Vietnam in 2011. Successful conservation efforts have led to an increase in the number of greater one-horned (or Indian) rhinos, from around 200 at the turn of the 20th century to around 3,700 today. The greater one-horned rhino is one of Asia’s biggest success stories, with their status improving from endangered to vulnerable following significant population increases. However, the species still remains under threat from poaching for its horn and from habitat loss and degradation.</p>
-  <p>In Africa, southern white rhinos, once thought to be extinct, now thrive in protected sanctuaries and are classified as near threatened. But the western black rhino and northern white rhinos have recently become extinct in the wild. The only two remaining northern white rhino are kept under 24-hour guard in Ol Pejeta Conservancy in Kenya. Black rhinos have doubled in number over the past two decades from their low point of fewer than 2,500 individuals, but total numbers are still a fraction of the estimated 100,000 that existed in the early part of the 20th century.</p>
+  <div id="article">
+    <h2>Rhino</h2>
+    <img src="rhino.jpg" width="700">
+    <p>Rhinos once roamed many places throughout Europe, Asia, and Africa and were known to early Europeans who depicted them in cave paintings. At the beginning of the 20th century, 500,000 rhinos roamed Africa and Asia. By 1970, rhino numbers
+      dropped to 70,000, and today, around 27,000 rhinos remain in the wild. Very few rhinos survive outside national parks and reserves due to persistent poaching and habitat loss over many decades. Three species of rhino—black, Javan, and
+      Sumatran—are critically endangered. Today, a small population of Javan rhinos is found in only one national park on the northern tip of the Indonesian island of Java. A mainland subspecies of the Javan rhino was declared extinct in Vietnam in
+      2011. Successful conservation efforts have led to an increase in the number of greater one-horned (or Indian) rhinos, from around 200 at the turn of the 20th century to around 3,700 today. The greater one-horned rhino is one of Asia’s biggest
+      success stories, with their status improving from endangered to vulnerable following significant population increases. However, the species still remains under threat from poaching for its horn and from habitat loss and degradation.</p>
+    <p>In Africa, southern white rhinos, once thought to be extinct, now thrive in protected sanctuaries and are classified as near threatened. But the western black rhino and northern white rhinos have recently become extinct in the wild. The only
+      two remaining northern white rhino are kept under 24-hour guard in Ol Pejeta Conservancy in Kenya. Black rhinos have doubled in number over the past two decades from their low point of fewer than 2,500 individuals, but total numbers are still
+      a fraction of the estimated 100,000 that existed in the early part of the 20th century.</p>
+  </div>
+  </div>
+
+  <input type="button" value="night" onclick="
+  if(this.value === 'night'){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    this.value ='day';
+  } else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    this.value ='night';
+  }
+  ">
+
+
 </body>
+
 </html>

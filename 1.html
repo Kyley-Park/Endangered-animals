@@ -1,19 +1,40 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1-Endangered animals</title>
-  <meta charset="utf-8">
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <script src="colors.js"></script>
 </head>
+
 <body>
   <h1><a href="index.html">Endangered Animals</a></h1>
-  <ol>
-    <li><a href="1.html">Polar bears</a></li>
-    <li><a href="2.html">Whales</a></li>
-    <li><a href="3.html">Rhinos</a></li>
-  </ol>
-  <h1>Polar Bear</h1>
-  <img src="pb.jpg"width="800"><br><br>
-  The largest bear in the world and the Arctic's top predator, <a href="https://www.worldwildlife.org/species/polar-bear"target="_blank"title="WWF-Polarbear-facts">polar bears</a> are a powerful symbol of the strength and endurance of the Arctic. The polar bear's Latin name, <strong><u>Ursus maritimus</strong></u>, means "sea bear." It's an apt name for this majestic species, which spends much of its life in, around, or on the ocean–predominantly on the sea ice. In the United States, Alaska is home to two polar bear subpopulations.
-  <p style="margin-bottom:30px;">Considered talented swimmers, polar bears can sustain a pace of six miles per hour by paddling with their front paws and holding their hind legs flat like a rudder. They have a thick layer of body fat and a water-repellent coat that insulates them from the cold air and water.</p><br>Polar bears spend over 50% of their time hunting for food. A polar bear might catch only one or two out of 10 seals it hunts, depending on the time of year and other variables. Their diet mainly consists of ringed and bearded seals because they need large amounts of fat to survive.<br><br>Polar bears rely heavily on sea ice for traveling, hunting, resting, mating and, in some areas, maternal dens. But because of ongoing and potential loss of their sea ice habitat resulting from climate change–the primary threat to polar bears Arctic-wide–polar bears were listed as a threatened species in the US under the Endangered Species Act in May 2008. As their sea ice habitat recedes earlier in the spring and forms later in the fall, polar bears are increasingly spending longer periods on land, where they are often attracted to areas where humans live.
+
+  <input type="button" value="night" onclick="
+  nightDayHandler(this);
+  ">
+
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">Polar bears</a></li>
+      <li><a href="2.html">Whales</a></li>
+      <li><a href="3.html">Rhinos</a></li>
+    </ol>
+    <div id="article">
+
+      <h2>Polar Bear</h2>
+      <img src="pb.jpg" width="700"><br><br>
+      The largest bear in the world and the Arctic's top predator, <a href="https://www.worldwildlife.org/species/polar-bear" target="_blank" title="WWF-Polarbear-facts">polar bears</a> are a powerful symbol of the strength and endurance of the
+      Arctic. The polar bear's Latin name, <strong><u>Ursus maritimus</strong></u>, means "sea bear." It's an apt name for this majestic species, which spends much of its life in, around, or on the ocean–predominantly on the sea ice. In the United
+      States, Alaska is home to two polar bear subpopulations.
+
+      <p style="margin-bottom:30px;">Considered talented swimmers, polar bears can sustain a pace of six miles per hour by paddling with their front paws and holding their hind legs flat like a rudder. They have a thick layer of body fat and a
+        water-repellent coat that insulates them from the cold air and water.</p><br>Polar bears spend over 50% of their time hunting for food. A polar bear might catch only one or two out of 10 seals it hunts, depending on the time of year and other
+      variables. Their diet mainly consists of ringed and bearded seals because they need large amounts of fat to survive.<br><br>Polar bears rely heavily on sea ice for traveling, hunting, resting, mating and, in some areas, maternal dens. But
+      because of ongoing and potential loss of their sea ice habitat resulting from climate change–the primary threat to polar bears Arctic-wide–polar bears were listed as a threatened species in the US under the Endangered Species Act in May 2008.
+      As their sea ice habitat recedes earlier in the spring and forms later in the fall, polar bears are increasingly spending longer periods on land, where they are often attracted to areas where humans live.
+    </div>
+  </div>
 </body>
+
 </html>
